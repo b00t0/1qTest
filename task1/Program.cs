@@ -22,3 +22,20 @@ string[] LimitCharsOfArray(string[] array, int limit)
     }
     return newArray;
 }
+
+void PrintArray(string[] array)
+{
+    bool firstElement = true;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] != null && array[i] != "")
+        {
+            if (!firstElement)
+            {
+                Console.Write(", ");
+            }
+            Console.Write($"{array[i]}");
+            firstElement = false;
+        }
+    }
+}

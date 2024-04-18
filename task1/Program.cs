@@ -39,3 +39,17 @@ void PrintArray(string[] array)
         }
     }
 }
+
+Console.WriteLine("Enter the array size");
+int size = Convert.ToInt32(Console.ReadLine());
+
+string[] array = new string[size];
+Console.WriteLine($"Enter the {size} array items");
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = Console.ReadLine();
+}
+
+string[] newArray = LimitCharsOfArray(array, 4);
+
+PrintArray(newArray);

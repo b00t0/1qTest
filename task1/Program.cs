@@ -47,7 +47,7 @@ string[] array = new string[size];
 Console.WriteLine($"Enter the {size} array items");
 for (int i = 0; i < array.Length; i++)
 {
-    array[i] = Console.ReadLine();
+    array[i] = Console.ReadLine()!;
 }
 
 string[] newArray = LimitCharsOfArray(array, 4);
